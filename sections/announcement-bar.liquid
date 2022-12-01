@@ -13,6 +13,9 @@
                     {% render 'icon-arrow' %}
                   {%- endif -%}
                 </p>
+                <p class="customText">
+                  {{ block.setting.customText }}
+                </p>
               </div>
           {%- if block.settings.link != blank -%}
             </a>
@@ -36,6 +39,12 @@
           "id": "text",
           "default": "Welcome to our store Brodyaha",
           "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
+        },
+        {
+          "type": "text",
+          "id": "customText",
+          "default": "My name is Sasha",
+          "label": "Custom"
         },
         {
           "type": "select",
